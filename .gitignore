@@ -3,7 +3,7 @@ build
 dist
 
 # Ignore components installed by bower
-bower
+vendor
 
 # Ignore these, just do it
 node_modules
