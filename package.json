@@ -9,7 +9,7 @@
     "stylus": "stylus src/css/base.styl -l --watch",
     "prerender": "NODE_PATH=./src node src/prerender"
   },
-  "author": "",
+  "author": "https://github.com/Robert-W",
   "license": "MIT",
   "devDependencies": {
     "babel": "^5.6.23",

@@ -9,7 +9,7 @@ export class MainPanel extends React.Component {
   render () {
     return (
       <div className='app-body'>
-        Body
+        <div id='map' className='map'></div>
       </div>
     );
   }

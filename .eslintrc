@@ -9,15 +9,14 @@
     "jsx": true
   },
   "globals": {
-    "React": true,
     "app": true,
     "alert": true,
+    "window": true,
     "console": true,
     "require": true,
-    "requestAnimationFrame": true,
-    "window": true,
     "document": true,
-    "location": true
+    "location": true,
+    "requestAnimationFrame": true
   },
   "plugins": [
     "react"
