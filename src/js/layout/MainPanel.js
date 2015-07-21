@@ -1,3 +1,4 @@
+import {Map} from 'js/map/Map';
 import React from 'react';
 
 export class MainPanel extends React.Component {
@@ -5,7 +6,7 @@ export class MainPanel extends React.Component {
   render () {
     return (
       <div className='app-body'>
-        <div id='map' className='map'></div>
+        <Map />
       </div>
     );
   }
