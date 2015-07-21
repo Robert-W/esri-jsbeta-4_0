@@ -1,4 +1,5 @@
 import babelPolyfill from 'babel-polyfill';
+import {arcgisConfig} from 'js/config';
 import {App} from 'js/layout/App';
 import React from 'react';
 
@@ -38,7 +39,12 @@ var loadCss = (url) => {
 
 var lazyloadStylesheets = () => {
   app.debug('main >>> lazyloadStylesheets');
-  loadCss('http://js.arcgis.com/4.0beta1/esri/css/esri.css');
+  loadCss(arcgisConfig.css);
+};
+
+var configureApp = () => {
+  app.debug('main >>> configureApp');
+  // Setup defaults such as esri proxy url or cors enabled servers
 };
 
 var initializeApp = () => {
@@ -47,4 +53,5 @@ var initializeApp = () => {
 };
 
 lazyloadStylesheets();
+configureApp();
 initializeApp();
