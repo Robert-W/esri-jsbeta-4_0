@@ -1,0 +1,23 @@
+{
+  "name": "esri-react-prerender",
+  "version": "0.0.1",
+  "description": "Boilerplate for a project that pre-renders it's React components and also uses Esri's JavaScript 4.0 Beta and ES6.",
+  "scripts": {
+    "start": "gulp copy && npm run jade & npm run babel & npm run stylus",
+    "jade": "jade src/index.jade -O src/index.json -P -o build --watch",
+    "babel": "babel src --out-dir build --modules amd -w",
+    "stylus": "stylus src/css/base.styl -l --watch",
+    "prerender": "NODE_PATH=./src node src/prerender"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "babel": "^5.6.23",
+    "eslint": "^0.24.1",
+    "eslint-plugin-react": "^3.0.0",
+    "gulp": "^3.9.0",
+    "jade": "^1.11.0",
+    "react": "^0.13.3",
+    "stylus": "^0.52.0"
+  }
+}
