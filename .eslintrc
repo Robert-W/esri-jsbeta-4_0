@@ -11,6 +11,7 @@
   "globals": {
     "app": true,
     "alert": true,
+    "define": true,
     "window": true,
     "console": true,
     "require": true,
@@ -22,6 +23,7 @@
     "react"
   ],
   "rules": {
-    "quotes": [1, "single", "avoid-escape"]
+    "quotes": [1, "single", "avoid-escape"],
+    "no-eval": 0
   }
 }
