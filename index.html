@@ -1,0 +1,117 @@
+<!DOCTYPE html><html><head><title>Esri React Prerender</title><meta name="author" content="Robert-W"><meta name="viewport" id="viewport" content="width=device-width, user-scalable=no, initial-scale=1, minimum-scale=1, maximum-scale=1"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta charset="utf-8"><style>html,body,.react-root{height:100%;width:100%;padding:0;margin:0;}</style><style>
+/* line 42 : /Users/Robert/Projects/github/esri-react-prerender/src/css/base.styl */
+
+/* line 1 : /Users/Robert/Projects/github/esri-react-prerender/node_modules/stylus/lib/functions/index.styl */
+
+/* line 1 : /Users/Robert/Projects/github/esri-react-prerender/src/css/base.styl */
+/* Import Config and Commonly Used Functions */
+
+/* line 286 : /Users/Robert/Projects/github/esri-react-prerender/node_modules/stylus/lib/functions/index.styl */
+
+/* line 1 : /Users/Robert/Projects/github/esri-react-prerender/src/css/config.styl */
+
+/* line 3 : /Users/Robert/Projects/github/esri-react-prerender/src/css/base.styl */
+/* Common Classes */
+
+/* line 4 : /Users/Robert/Projects/github/esri-react-prerender/src/css/base.styl */
+.hidden,
+.hideOnLoad {
+  display: none;
+}
+
+/* line 8 : /Users/Robert/Projects/github/esri-react-prerender/src/css/base.styl */
+.clearfix {
+  clear: both;
+}
+
+/* line 11 : /Users/Robert/Projects/github/esri-react-prerender/src/css/base.styl */
+.text-center {
+  text-align: center;
+}
+
+/* line 14 : /Users/Robert/Projects/github/esri-react-prerender/src/css/base.styl */
+.pointer {
+  cursor: pointer;
+}
+
+/* line 17 : /Users/Robert/Projects/github/esri-react-prerender/src/css/base.styl */
+.relative {
+  position: relative;
+}
+
+/* line 20 : /Users/Robert/Projects/github/esri-react-prerender/src/css/base.styl */
+body {
+  background: #ccc;
+  font-family: Cambria, Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+}
+
+/* line 24 : /Users/Robert/Projects/github/esri-react-prerender/src/css/base.styl */
+.app-header {
+  background: #2982ff;
+  color: #fff;
+  height: 50px;
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
+/* line 34 : /Users/Robert/Projects/github/esri-react-prerender/src/css/base.styl */
+.app-body {
+  position: absolute;
+  top: 50px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+/* line 55 : /Users/Robert/Projects/github/esri-react-prerender/src/css/config.styl */
+
+/* line 55 : /Users/Robert/Projects/github/esri-react-prerender/src/css/header.styl */
+
+/* line 1 : /Users/Robert/Projects/github/esri-react-prerender/src/css/header.styl */
+.app-title,
+.app-subtitle {
+  line-height: 25px;
+  padding: 0 10px;
+}
+
+/* line 6 : /Users/Robert/Projects/github/esri-react-prerender/src/css/header.styl */
+.app-title {
+  font-size: 22px;
+}
+
+/* line 9 : /Users/Robert/Projects/github/esri-react-prerender/src/css/header.styl */
+.app-subtitle {
+  font-size: 12px;
+}
+
+/* line 10 : /Users/Robert/Projects/github/esri-react-prerender/src/css/header.styl */
+
+/* line 10 : /Users/Robert/Projects/github/esri-react-prerender/src/css/map.styl */
+
+/* line 1 : /Users/Robert/Projects/github/esri-react-prerender/src/css/map.styl */
+.map {
+  background: #ccc;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+</style><script>var base = location.pathname.replace(/\/[^/]+$/, '');
+var dojoConfig = {
+  parseOnLoad: false,
+  async: true,
+  cacheBust: '1.0.0',
+  packages: [
+    { name: 'js', location: base + 'js' },
+    { name: 'vendor', location: base + 'vendor' }
+  ],
+  aliases: [
+    ['react', 'vendor/react/react.min'],
+    ['babel-polyfill', 'vendor/babel-polyfill/browser-polyfill']
+  ],
+  deps: ['dojo/domReady!'],
+  callback: function () {require(['js/main']);}
+};</script><script src="http://js.arcgis.com/4.0beta1/init.js" async></script></head><body><div class="react-root" data-reactid=".1jwda4ypjb4" data-react-checksum="374318143"><header class="app-header" data-reactid=".1jwda4ypjb4.0"><div class="app-title" data-reactid=".1jwda4ypjb4.0.0">Esri React Prerender Test</div><div class="app-subtitle" data-reactid=".1jwda4ypjb4.0.1">Testing React.renderToString from node script for an app using Esri&#x27;s JavaScript API.</div></header><div class="app-body" data-reactid=".1jwda4ypjb4.1"><div class="map" id="map" data-reactid=".1jwda4ypjb4.1.0"></div></div></div></body></html>
