@@ -1,6 +1,8 @@
 # Ignore the build and dist directories
+src
 build
 dist
+__tests__
 
 # Ignore components installed by bower
 vendor
