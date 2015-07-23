@@ -21,6 +21,7 @@
     "requestAnimationFrame": true,
     "it": true,
     "jest": true,
+    "spyOn": true,
     "expect": true,
     "describe": true
   },
