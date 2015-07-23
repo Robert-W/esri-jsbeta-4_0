@@ -49,9 +49,13 @@ var configureApp = () => {
 
 var initializeApp = () => {
   app.debug('main >>> initializeApp');
+  lazyloadStylesheets();
+  configureApp();
   React.render(<App />, document.body);
 };
 
-lazyloadStylesheets();
-configureApp();
-initializeApp();
+if (document.readyState === 'loaded') {
+  initializeApp();
+} else {
+  window.onload = initializeApp;
+}
