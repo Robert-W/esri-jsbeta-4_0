@@ -20,13 +20,13 @@ describe('Utilities - assert', () => {
     }).toThrow();
   });
 
-  it('should throw an error with an anonymous message when none is provided', () => {
+  it('should throw an error with an anonymous message when none is provided and condition is falsy', () => {
     expect(() => {
       assert(true === false, anonymousMessage);
     }).toThrow(anonymousMessage);
   });
 
-  it('should throw an error with the provided message when provided', () => {
+  it('should throw an error with the provided message when provided and condition is falsy', () => {
     expect(() => {
       assert('Test' === 'test', expectedMessage);
     }).toThrow(expectedMessage);
