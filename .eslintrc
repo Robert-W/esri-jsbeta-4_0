@@ -5,6 +5,7 @@
     "es6": true
   },
   "ecmaFeatures": {
+    "templateStrings": true,
     "modules": true,
     "jsx": true
   },
@@ -17,7 +18,11 @@
     "require": true,
     "document": true,
     "location": true,
-    "requestAnimationFrame": true
+    "requestAnimationFrame": true,
+    "it": true,
+    "jest": true,
+    "expect": true,
+    "describe": true
   },
   "plugins": [
     "react"

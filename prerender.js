@@ -5,7 +5,8 @@ var fs = require('fs');
 
 var rootComponentPath = 'js/layout/App';
 var buildProfilePath = path.join(__dirname, 'build.js');
-var file = path.join(__dirname, 'src/index.json');
+var fileIn = path.join(__dirname, 'src/index.json');
+var fileOut = path.join(__dirname, 'src/jade.json');
 
 var buildProfile = fs.readFileSync(buildProfilePath, 'utf-8');
 var buildConfig = eval(buildProfile);
@@ -25,13 +26,17 @@ requirejs.config({
 var reactApp = React.createFactory(requirejs(rootComponentPath).App);
 var markup = React.renderToString(reactApp());
 
-var json = JSON.parse(fs.readFileSync(file, 'utf-8'));
+var json = JSON.parse(fs.readFileSync(fileIn, 'utf-8'));
 json.markup = markup;
-fs.writeFile(file, JSON.stringify(json, null, 2), function (writeErr) {
+
+fs.writeFile(fileOut, JSON.stringify(json, null, 2), function (writeErr) {
   if (writeErr) { console.error(writeErr); return; }
-  console.log('Successfully prerendered components to ' + file);
+  console.log('Successfully prerendered components to ' + fileOut);
 });
 
+// The above method requires modules with esri dependencies to be remapped to a file with no dependencies,
+// they are not needed for prerender anyway
+// The below method requires modules with esri dependencies to be commented out or somehow 'not required' to work
 
 // var React = require('react/addons');
 // var path = require('path');

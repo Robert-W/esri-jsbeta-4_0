@@ -2,6 +2,5 @@
   "title": "Esri React Prerender",
   "author": "Robert-W",
   "esriVersion": "4.0beta1",
-  "appVersion": "1.0.0",
-  "markup": "<div class=\"react-root\" data-reactid=\".2157m1b4npc\" data-react-checksum=\"-288186337\"><header class=\"app-header\" data-reactid=\".2157m1b4npc.0\"><div class=\"app-title\" data-reactid=\".2157m1b4npc.0.0\">Esri React Prerender Test</div><div class=\"app-subtitle\" data-reactid=\".2157m1b4npc.0.1\">Testing React.renderToString from node script for an app using Esri&#x27;s JavaScript API.</div></header><div class=\"app-body\" data-reactid=\".2157m1b4npc.1\"><div class=\"map\" id=\"map\" data-reactid=\".2157m1b4npc.1.0\"></div></div></div>"
+  "appVersion": "1.0.0"
 }
