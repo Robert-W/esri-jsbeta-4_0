@@ -1,11 +1,8 @@
-// Should export two methods, one to convert params to string and another to convert string to object
-// Method names, toObject, toQuery
 /**
 * Convert a paramterized string to an object
 * @param {string} querystring - Query string to be expanded into an object
 */
 export function toObject(querystring) {
-  // return !querystring ? {} : _.zipObject(querystring.split('&').map(bit => bit.split('=').map(str => decodeURIComponent(str))));
   if (!querystring) { return {}; }
   let result = {};
   let pairs = querystring.split('&').map((item) => {
