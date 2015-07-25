@@ -1,7 +1,7 @@
 export const config = {
   app: {
-    'title': 'Esri React Prerender Test',
-    'subtitle': 'Testing React.renderToString from node script for an app using Esri\'s JavaScript API.'
+    'title': 'Esri 4.0 Beta',
+    'subtitle': 'Testing out ArcGIS JavaScript 4.0 Beta API with React.'
   },
 
   arcgis: {
@@ -11,7 +11,7 @@ export const config = {
   map: {
     id: 'map',
     options: {
-      basemap: 'national-geographic'
+      basemap: 'vector-streets-relief'
     },
     sceneView: {
       camera: {

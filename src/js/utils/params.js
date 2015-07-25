@@ -8,7 +8,7 @@ export function toObject(querystring) {
   let pairs = querystring.split('&').map((item) => {
     return item.split('=').map(str => decodeURIComponent(str));
   });
-  // Shouls have an array of arrays now, ex: [['a','b'], ['foo','bar']]
+  // Should have an array of arrays now, ex: [['a','b'], ['foo','bar']]
   pairs.forEach((pair) => {
     if (!pair[0] || !pair[1]) {
       console.warn(`You provided an invalid key-value pair, ${pair[0]}-${pair[1]} is being omitted.`);

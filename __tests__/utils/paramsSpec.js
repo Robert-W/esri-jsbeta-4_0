@@ -7,10 +7,7 @@ let objects = {
   A: { foo: 'bar', bar: 'baz', scooby: 'doo' },
   B: { url: 'http://www.google.com', value: '20%' },
   C: { url: 'http://www.google.com', value: '20%' },
-  D: {
-    key: 'value',
-    nested: { 'expected': 'toFail' }
-  }
+  D: { key: 'value', nested: { 'expected': 'toFail' }}
 };
 
 let strings = {
@@ -21,7 +18,7 @@ let strings = {
   invalidQuery: 'key=&some=&foo=bar'
 };
 
-describe('Utilities - parameterize.toObject', () => {
+describe('Utilities - params.toObject', () => {
 
   it('should convert a string to a JSON object with the correct keys', () => {
     let result = params.toObject(strings.A);
@@ -47,7 +44,7 @@ describe('Utilities - parameterize.toObject', () => {
 
 });
 
-describe('Utilities - parameterize.toQuery', () => {
+describe('Utilities - params.toQuery', () => {
 
   it('should flatten a JSON object and return a string with the correct key value mapping', () => {
     var result = params.toQuery(objects.A);

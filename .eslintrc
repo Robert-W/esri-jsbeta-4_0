@@ -23,7 +23,9 @@
     "jest": true,
     "spyOn": true,
     "expect": true,
-    "describe": true
+    "describe": true,
+    "afterEach": true,
+    "beforeEach": true
   },
   "plugins": [
     "react"
