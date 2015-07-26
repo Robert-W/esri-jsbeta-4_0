@@ -13,7 +13,7 @@ export class Loader extends React.Component {
 
   render () {
     let style = {
-      display: (this.props.visible ? 'flex' : 'none')
+      display: (this.props.visible ? 'block' : 'none')
     };
     return (
       <div className='loading-container' style={style}>

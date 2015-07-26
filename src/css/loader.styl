@@ -1,16 +1,17 @@
 .loading-container
-  justify-content center
-  align-items center
-  flex-flow column
-  display flex
-  height 100%
-  width 100%
+  position absolute
+  left calc(50% - 50px)
+  top calc(50% - 50px)
+  text-align center
+  height 100px
+  width 100px
 
 .loader
   animation loader 1s ease infinite
   border-right 1px solid $loading
   border-top 4px solid $loading
   border-radius 100%
+  margin 5px auto
   height 64px
   width 64px
   @keyframes loader

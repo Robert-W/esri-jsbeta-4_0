@@ -11,7 +11,7 @@ export const config = {
   map: {
     id: 'map',
     options: {
-      basemap: 'vector-streets-relief'
+      basemap: 'terrain'
     },
     sceneView: {
       camera: {

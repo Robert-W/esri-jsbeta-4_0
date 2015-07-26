@@ -11,9 +11,9 @@ export class Map extends React.Component {
   }
 
   componentDidMount () {
-    actions.createMapView(mapConfig).then(() => {
-      this.setState({ loaded: true });
-    });
+    // actions.createMapView(mapConfig).then(() => {
+    //   this.setState({ loaded: true });
+    // });
   }
 
   render () {
