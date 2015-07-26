@@ -1,3 +1,5 @@
+import {MAP as constants} from 'js/constants/AppConstants';
+import {Dispatcher as dispatcher} from 'js/dispatcher';
 import SceneView from 'esri/views/SceneView';
 import MapView from 'esri/views/MapView';
 import EsriMap from 'esri/Map';
@@ -50,6 +52,19 @@ export const MapActions = {
     });
 
     return deferred;
+  },
+
+  /**
+  * Method to update the basemap
+  * @param {string} basemap - the value of the basemap to be updated, should come from config.js basemaps
+  */
+  setBasemap (basemap) {
+    app.debug('MapActions >>> setBasemap');
+
+    dispatcher.dispatch({
+      actionType: constants.basemap,
+      data: basemap
+    });
   }
 
 };

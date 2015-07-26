@@ -7,11 +7,11 @@
     "dist": "rm -rf dist && npm run optimize && npm run stylus && npm run jade",
     "jade-dev": "jade src/index.jade -O src/index.json -P -o build --watch",
     "babel-dev": "babel src --out-dir build --modules amd -w",
-    "stylus-dev": "stylus src/css/base.styl -l --watch",
+    "stylus-dev": "stylus src/css/base.styl -l --watch & stylus src/css/app.styl -o build/css -l --watch",
     "prerender": "NODE_PATH=./src node ./prerender",
     "jade": "npm run prerender && jade src/index.jade -O src/jade.json -o dist && rm src/jade.json",
     "babel": "babel src --modules amd --out-dir build",
-    "stylus": "stylus src/css/base.styl --compress",
+    "stylus": "mkdir -p dist/css && stylus src/css/base.styl --compress && stylus src/css/app.styl -o dist/css --compress",
     "optimize": "npm run babel && r.js -o build.js",
     "test": "jest --verbose"
   },

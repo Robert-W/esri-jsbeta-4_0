@@ -1,5 +1,5 @@
+import {MAP as constants} from 'js/constants/AppConstants';
 import {Dispatcher as dispatcher} from 'js/dispatcher';
-import constants from 'constants/MapConstants';
 
 let store = {};
 let callbacks = [];
@@ -40,13 +40,13 @@ dispatcher.register(payload => {
       set(constants.basemap, payload.data);
       emit();
     break;
-    case constants.extent:
-      set(constants.extent, {
-        x: payload.data.center.getLongitude().toFixed(2),
-        y: payload.data.center.getLatitude().toFixed(2),
-        z: payload.data.zoom
-      });
-    break;
+    // case constants.extent:
+    //   set(constants.extent, {
+    //     x: payload.data.center.getLongitude().toFixed(2),
+    //     y: payload.data.center.getLatitude().toFixed(2),
+    //     z: payload.data.zoom
+    //   });
+    // break;
   }
 
 });

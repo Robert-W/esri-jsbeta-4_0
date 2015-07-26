@@ -11,7 +11,7 @@ export const config = {
   map: {
     id: 'map',
     options: {
-      basemap: 'terrain'
+      basemap: 'osm'
     },
     sceneView: {
       camera: {
@@ -23,6 +23,16 @@ export const config = {
       center: [-102, 39],
       zoom: 4
     }
+  },
+
+  ui: {
+    basemaps: [
+      { label: 'Open Street Map', value: 'osm', iconClass: 'basemap-osm' },
+      { label: 'Vector Streets Night', value: 'vector-streets-night', iconClass: 'basemap-vsn' },
+      { label: 'Vector Streets Mobile', value: 'vector-streets-mobile', iconClass: 'basemap-vsm' },
+      { label: 'Vector Canvas Light', value: 'vector-canvas-light', iconClass: 'basemap-vcl' },
+      { label: 'Vector Canvas Dark', value: 'vector-canvas-dark', iconClass: 'basemap-vcd' }
+    ]
   }
 
 };
@@ -30,3 +40,5 @@ export const config = {
 export const appConfig = config.app;
 export const mapConfig = config.map;
 export const arcgisConfig = config.arcgis;
+/* UI Config Exports */
+export const basemaps = config.ui.basemaps;

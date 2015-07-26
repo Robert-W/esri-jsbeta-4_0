@@ -1,4 +1,5 @@
 import {MapActions as actions} from 'js/actions/MapActions';
+import {BasemapGallery} from 'js/map/BasemapGallery';
 import {Loader} from 'js/map/Loader';
 import {mapConfig} from 'js/config';
 import React from 'react';
@@ -20,7 +21,9 @@ export class Map extends React.Component {
     return (
       <div className='map' id={mapConfig.id} >
         <Loader text='loading...' visible={!this.state.loaded} />
-        {this.props.children}
+        {!this.state.loaded ? null :
+          <BasemapGallery />
+        }
       </div>
     );
   }

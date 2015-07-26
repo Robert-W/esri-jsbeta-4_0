@@ -40,6 +40,7 @@ var loadCss = (url) => {
 var lazyloadStylesheets = () => {
   app.debug('main >>> lazyloadStylesheets');
   loadCss(arcgisConfig.css);
+  loadCss('css/app.css');
 };
 
 var configureApp = () => {
