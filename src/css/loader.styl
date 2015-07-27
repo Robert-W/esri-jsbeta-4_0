@@ -7,6 +7,7 @@
   width 100px
 
 .loader
+  -webkit-animation loader 1s ease infinite
   animation loader 1s ease infinite
   border-right 1px solid $loading
   border-top 4px solid $loading
@@ -17,8 +18,12 @@
   @keyframes loader
     to
       transform rotate( 360deg )
+  @-webkit-keyframes loader
+    to
+      transform rotate( 360deg )
 
 .loader-label
+  -webkit-animation fader 3s ease-in-out infinite
   animation fader 3s ease-in-out infinite
   text-transform uppercase
   font-size 11px
@@ -26,6 +31,11 @@
   margin 10px
   opacity 0
   @keyframes fader
+    50%
+      opacity 1
+    100%
+      opacity 0
+  @-webkit-keyframes fader
     50%
       opacity 1
     100%

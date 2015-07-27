@@ -1,3 +1,12 @@
+/* Esri Components css */
+/*
+* This is to hide esri components until their css is loaded, their css is loading
+* fairly slow and its causing some UI Comoponents to flash out of position, Esri's
+* css will override this
+*/
+.esriUI .esriComponent
+  display none
+
 .map
   background $mapBackground
   height 100%
