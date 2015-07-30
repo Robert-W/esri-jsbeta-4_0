@@ -2,15 +2,6 @@ import React from 'react';
 
 export class Loader extends React.Component {
 
-  constructor (props) {
-    super(props);
-    this.state = { loaded: false };
-  }
-
-  componentDidMount () {
-
-  }
-
   render () {
     let style = {
       display: (this.props.visible ? 'block' : 'none')

@@ -13,6 +13,8 @@ export const MapActions = {
   createSceneView (mapConfig) {
     app.debug('MapActions >>> createSceneView');
 
+    if (app.view) { app.view.destroy(); }
+
     var deferred = new Promise((resolve) => {
       app.map = new EsriMap(mapConfig.options);
       app.view = new SceneView({
@@ -37,6 +39,8 @@ export const MapActions = {
   */
   createMapView (mapConfig) {
     app.debug('MapActions >>> createMapView');
+
+    if (app.view) { app.view.destroy(); }
 
     var deferred = new Promise((resolve) => {
       app.map = new EsriMap(mapConfig.options);
