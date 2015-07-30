@@ -21,7 +21,10 @@ export class Map extends React.Component {
   }
 
   render () {
-    var widgets = [<ModeSwitchButton click={this.modeChange.bind(this)}/>, <BasemapGallery />];
+    var widgets = [
+      <ModeSwitchButton click={this.modeChange.bind(this)}/>,
+      <BasemapGallery />
+    ];
 
     return (
       <div className='map' id={mapConfig.id} >
