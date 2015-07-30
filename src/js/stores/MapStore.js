@@ -40,6 +40,10 @@ dispatcher.register(payload => {
       set(constants.basemap, payload.data);
       emit();
     break;
+    case constants.viewType:
+      set(constants.viewType, payload.data);
+      emit();
+    break;
     // case constants.extent:
     //   set(constants.extent, {
     //     x: payload.data.center.getLongitude().toFixed(2),

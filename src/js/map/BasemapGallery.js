@@ -6,6 +6,9 @@ import {basemaps} from 'js/config';
 import React from 'react';
 
 let getCurrentBasemap = () => MapStore.get(constants.basemap) || app.map.basemap.id;
+let getCurrentViewType = () => {
+  return MapStore.get(constants.viewType) || (app.view.globeMode ? constants.viewTypes.scene : constants.viewTypes.map);
+};
 
 export class BasemapGallery extends React.Component {
 
@@ -13,6 +16,7 @@ export class BasemapGallery extends React.Component {
     super(props);
     this.state = {
       open: false,
+      viewType: getCurrentViewType(),
       activeBasemap: getCurrentBasemap()
     };
   }
@@ -23,8 +27,12 @@ export class BasemapGallery extends React.Component {
 
   storeDidUpdate () {
     let basemap = getCurrentBasemap();
-    this.setState({ activeBasemap: basemap });
     app.map.basemap = basemap;
+
+    this.setState({
+      activeBasemap: basemap,
+      viewType: getCurrentViewType()
+    });
   }
 
   render () {
@@ -39,7 +47,8 @@ export class BasemapGallery extends React.Component {
   }
 
   renderBasemapItems () {
-    return basemaps.map(basemap => {
+    let availableBasemaps = basemaps[this.state.viewType];
+    return availableBasemaps.map(basemap => {
       return (
         <BasemapGalleryItem
           value={basemap.value}

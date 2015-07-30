@@ -22,7 +22,8 @@ export const MapActions = {
         map: app.map
       });
 
-      app.map.then(function () {
+      app.map.then(() => {
+        this.setViewType(constants.viewTypes.scene);
         resolve();
       });
     });
@@ -46,7 +47,8 @@ export const MapActions = {
         map: app.map
       });
 
-      app.map.then(function () {
+      app.map.then(() => {
+        this.setViewType(constants.viewTypes.map);
         resolve();
       });
     });
@@ -64,6 +66,20 @@ export const MapActions = {
     dispatcher.dispatch({
       actionType: constants.basemap,
       data: basemap
+    });
+  },
+
+  /**
+  * Update the store with the current view type on th map, scene or map
+  * @param {string} viewType - current map view type
+  */
+  setViewType (viewType) {
+    app.debug('MapActions >>> setViewType');
+    // We need to reset the basemap back to default
+    this.setBasemap();
+    dispatcher.dispatch({
+      actionType: constants.viewType,
+      data: viewType
     });
   }
 

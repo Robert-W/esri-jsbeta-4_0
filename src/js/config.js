@@ -17,7 +17,7 @@ export const config = {
       camera: {
         position: [-102, 39, 600]
       },
-      zoom: 4
+      zoom: 1
     },
     mapView: {
       center: [-102, 39],
@@ -26,13 +26,23 @@ export const config = {
   },
 
   ui: {
-    basemaps: [
-      { label: 'Open Street Map', value: 'osm', iconClass: 'basemap-osm' },
-      { label: 'Vector Streets Night', value: 'vector-streets-night', iconClass: 'basemap-vsn' },
-      { label: 'Vector Streets Mobile', value: 'vector-streets-mobile', iconClass: 'basemap-vsm' },
-      { label: 'Vector Canvas Light', value: 'vector-canvas-light', iconClass: 'basemap-vcl' },
-      { label: 'Vector Canvas Dark', value: 'vector-canvas-dark', iconClass: 'basemap-vcd' }
-    ]
+    basemaps: {
+      'map': [
+        { label: 'Open Street Map', value: 'osm', iconClass: 'basemap-osm' },
+        { label: 'Vector Streets Night', value: 'vector-streets-night', iconClass: 'basemap-vsn' },
+        { label: 'Vector Streets Mobile', value: 'vector-streets-mobile', iconClass: 'basemap-vsm' },
+        { label: 'Vector Canvas Light', value: 'vector-canvas-light', iconClass: 'basemap-vcl' },
+        { label: 'Vector Canvas Dark', value: 'vector-canvas-dark', iconClass: 'basemap-vcd' }
+      ],
+      'scene': [
+        { label: 'Open Street Map', value: 'osm', iconClass: 'basemap-osm' },
+        { label: 'National Geographic', value: 'national-geographic', iconClass: 'basemap-nat-geo' },
+        { label: 'Dark Gray Canvas', value: 'dark-gray', iconClass: 'basemap-cd' },
+        { label: 'Light Gray Canvas', value: 'gray', iconClass: 'basemap-cl' },
+        { label: 'Oceans', value: 'oceans', iconClass: 'basemap-oceans' }
+      ]
+    }
+
   }
 
 };

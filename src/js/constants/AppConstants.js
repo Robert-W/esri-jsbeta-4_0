@@ -1,7 +1,12 @@
 export const APP = {
   map: {
     'mode': 'mode',
-    'basemap': 'basemap'
+    'basemap': 'basemap',
+    'viewType': 'viewType',
+    'viewTypes': {
+      'map': 'map',
+      'scene': 'scene'
+    }
   }
 };
 
