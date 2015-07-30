@@ -26,4 +26,4 @@
 
 #### Production
 <p>Run: <code>npm run dist</code></p>
-<p>Coming Soon!!</p>
+<p>Generates a minified build using a custom prerender script, requirejs optimizer, babel, stylus, jade, and gulp in a dist folder.  After running, you can look at the index.html source and you will notice a big string of React markup generated from prerender.js</p>
