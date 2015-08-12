@@ -1,5 +1,5 @@
-# esri-react-prerender
-> Boilerplate for a project that pre-renders it's React components and also uses Esri's JavaScript 4.0 Beta and ES6.
+# esri-jsbeta-4_0
+> Boilerplate for a project using ES6, Esri's new JavaScript 4.0 Beta 1, and React.  It also pre-renders all the React components for improved SEO and user experience on load.
 
 ### Demo
 <a href='http://robert-w.github.io/esri-jsbeta-4_0/'>http://robert-w.github.io/esri-jsbeta-4_0/</a>
