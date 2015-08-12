@@ -2,7 +2,7 @@
 > Boilerplate for a project that pre-renders it's React components and also uses Esri's JavaScript 4.0 Beta and ES6.
 
 ### Demo
-<a href='http://robert-w.github.io/esri-react-prerender/'>http://robert-w.github.io/esri-react-prerender/</a>
+<a href='http://robert-w.github.io/esri-jsbeta-4_0/'>http://robert-w.github.io/esri-jsbeta-4_0/</a>
 
 ### Getting Started
 
@@ -17,6 +17,9 @@
 		</ul>
 	</li>
 </ol>
+
+##### NOTE
+>3d Mode does not work on mobile devices, this boilerplate needs to add a webGL check and hide the mode change button in that case but it is not currently doing so
 
 ### Scripts
 
