@@ -25,7 +25,7 @@
 
 #### Development
 <p>Run: <code>npm start</code></p>
-<p>This will compile all stylus, jade, and es6 modules, and it's using babel for es6 modules so it will compile JSX for you as well.</p>
+<p>This will compile all stylus, jade, and es6 modules via babel for which will also compile JSX for you as well. This outputs everything to a build folder in your project you can serve files from.</p>
 
 #### Production
 <p>Run: <code>npm run dist</code></p>
