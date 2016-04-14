@@ -4,6 +4,8 @@
 ### Demo
 <a href='http://robert-w.github.io/esri-jsbeta-4_0/'>http://robert-w.github.io/esri-jsbeta-4_0/</a>
 
+> No longer maintained.  See a newer version here [https://github.com/Robert-W/esri-flux-react](https://github.com/Robert-W/esri-flux-react) that includes the latest beta from 4.0 and more useful boilerplate, it will replace this repo in the near future.
+
 ### Getting Started
 
 <p>This project requires at minimum node and bower.</p>
