@@ -1,11 +1,11 @@
 export const config = {
   app: {
-    'title': 'Esri 4.0 Beta',
-    'subtitle': 'Testing out ArcGIS JavaScript 4.0 Beta API with React.'
+    'title': 'Esri 4.0',
+    'subtitle': 'Testing out ArcGIS JavaScript 4.0 API with React.'
   },
 
   arcgis: {
-    css: 'http://js.arcgis.com/4.0beta1/esri/css/esri.css'
+    css: 'https://js.arcgis.com/4.0/esri/css/main.css'
   },
 
   map: {
